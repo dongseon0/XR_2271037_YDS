@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class D04_Mesh_Renderer : MonoBehaviour
+public class D04_Mesh_Renderer2: MonoBehaviour
 {
     MeshFilter ThisMeshFilter;
     public GameObject Sphere, Capsule;
