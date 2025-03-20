@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 189413916}
   - component: {fileID: 189413915}
   - component: {fileID: 189413914}
+  - component: {fileID: 189413917}
   m_Layer: 5
   m_Name: Button_SetActive
   m_TagString: Untagged
@@ -297,29 +298,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 613414710}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 189413917}
+        m_TargetAssemblyTypeName: D06_UIGameObjects, Assembly-CSharp
+        m_MethodName: OnClick_Destroy
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 958189162}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 958189162}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &189413915
 MonoBehaviour:
@@ -359,6 +348,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189413912}
   m_CullTransparentMesh: 1
+--- !u!114 &189413917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189413912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6967ffd170a42759df46212b09ccf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &505980580
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +853,7 @@ GameObject:
   - component: {fileID: 825399341}
   - component: {fileID: 825399340}
   - component: {fileID: 825399339}
+  - component: {fileID: 825399342}
   m_Layer: 5
   m_Name: Button_DeActive
   m_TagString: Untagged
@@ -923,10 +925,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 958189162}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 825399342}
+        m_TargetAssemblyTypeName: D06_UIGameObjects, Assembly-CSharp
+        m_MethodName: OnClick_LoadScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -934,18 +936,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 613414710}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &825399340
 MonoBehaviour:
@@ -985,6 +975,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825399337}
   m_CullTransparentMesh: 1
+--- !u!114 &825399342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825399337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6967ffd170a42759df46212b09ccf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &901430388
 GameObject:
   m_ObjectHideFlags: 0
