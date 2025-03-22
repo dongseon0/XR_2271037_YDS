@@ -6,16 +6,12 @@ public class HW_CollisionDetection : MonoBehaviour
     {
         Debug.Log($"Collision detected with: {collision.gameObject.name}");
 
+        // Sphere와 충돌했을 때
         if (collision.gameObject.CompareTag("Sphere"))
         {
             Debug.Log("Destroying Sphere now...");
-            // 잠시 대기 후 Destroy() 호출
-            Invoke(nameof(DestroySphere), 0.1f);
+            // Sphere 삭제
+            Destroy(collision.gameObject);  // Sphere 오브젝트 삭제
         }
-    }
-
-    void DestroySphere()
-    {
-        Destroy(gameObject);  // 실제로 오브젝트 삭제
     }
 }
