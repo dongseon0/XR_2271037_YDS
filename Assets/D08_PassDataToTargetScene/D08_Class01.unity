@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\uC81C\uBAA9 "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
   m_sharedMaterial: {fileID: -5294631805555508866, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
@@ -338,7 +338,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 260242260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1243563137}
+        m_TargetAssemblyTypeName: D08_Scene01_Controller, Assembly-CSharp
+        m_MethodName: OnClick_Display_UserInput
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 217520527}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &260242260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,7 +454,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283478869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -482,8 +494,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -614,7 +626,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 298566025}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1243563137}
+        m_TargetAssemblyTypeName: D08_Scene01_Controller, Assembly-CSharp
+        m_MethodName: OnClick_AssignData
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1042156369}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1243563137}
+        m_TargetAssemblyTypeName: D08_Scene01_Controller, Assembly-CSharp
+        m_MethodName: OnClick_Display_UserInput
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 217520527}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &298566025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Load Next Scene
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
   m_sharedMaterial: {fileID: -5294631805555508866, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
@@ -737,8 +773,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -869,7 +905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 399416454}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1243563137}
+        m_TargetAssemblyTypeName: D08_Scene01_Controller, Assembly-CSharp
+        m_MethodName: OnClick_LoadScene
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &399416454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1468,7 +1516,7 @@ MonoBehaviour:
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
-  m_GlobalPointSize: 14
+  m_GlobalPointSize: 12
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1497,7 +1545,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
+  m_Text: "\uB0B4\uC6A9\uC744 \uAE30\uC785\uD558\uC138\uC694..."
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -1547,6 +1595,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042156367}
   m_CullTransparentMesh: 1
+--- !u!1 &1243563136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243563138}
+  - component: {fileID: 1243563137}
+  m_Layer: 0
+  m_Name: UI_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1243563137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243563136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67584e72c08603843a100362746828e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1243563138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243563136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 125.95992, y: 71.388306, z: -0.8972479}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531519414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,7 +1856,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u200B"
+  m_text: "\uB0B4\uC6A9\uC744 \uAE30\uC785\uD558\uC138\uC694...\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
   m_sharedMaterial: {fileID: -5294631805555508866, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
@@ -1791,8 +1883,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1898,7 +1990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Display and Save UserInput
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
   m_sharedMaterial: {fileID: -5294631805555508866, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
@@ -1925,8 +2017,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2093,7 +2185,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Display User input
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
   m_sharedMaterial: {fileID: -5294631805555508866, guid: 140cce2ddf7cfa04b9c4b50d4ae29af5, type: 2}
@@ -2120,8 +2214,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2283,3 +2377,4 @@ SceneRoots:
   - {fileID: 1808709624}
   - {fileID: 1872886524}
   - {fileID: 1531519417}
+  - {fileID: 1243563138}
