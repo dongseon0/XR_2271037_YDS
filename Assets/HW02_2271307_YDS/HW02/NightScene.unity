@@ -957,8 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Video:
-  - {fileID: 0}
+  Videos: []
 --- !u!1001 &534630615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2311,7 +2310,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1656844004}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -2449,7 +2448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Video: []
+  Videos: []
 --- !u!1001 &1727862957
 PrefabInstance:
   m_ObjectHideFlags: 0
