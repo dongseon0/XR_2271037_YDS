@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class D07_Sample_Lantern : MonoBehaviour
+public class D07_Lantern : MonoBehaviour
 {
     int state;
     public GameObject Lantern;
