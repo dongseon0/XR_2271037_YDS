@@ -906,7 +906,7 @@ VideoPlayer:
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 2122867164}
-  m_TargetTexture: {fileID: 8400000, guid: d63d7805f5225490cb3e95d300682dcd, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: efabcd08a9cf941da96e10652f75b54c, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
@@ -954,11 +954,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 519874750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cf8a98feba0d47e2842a9524f13ca68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Video:
-  - {fileID: 0}
+  Video: []
 --- !u!1001 &534630615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1615,13 +1614,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020685581}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1201394, y: 0.54099333, z: -0.0784297, w: 0.8286987}
+  m_LocalRotation: {x: 0.048655678, y: -0.06733768, z: -0.13497156, w: 0.9873606}
   m_LocalPosition: {x: -0.000011494313, y: 0, z: 0.000017360384}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2122867159}
-  m_LocalEulerAnglesHint: {x: 16.498, y: 66.275, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.468, y: -8.427, z: -15.897}
 --- !u!108 &1020685583
 Light:
   m_ObjectHideFlags: 0
@@ -2398,7 +2397,7 @@ VideoPlayer:
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 2122867164}
-  m_TargetTexture: {fileID: 8400000, guid: 92febbb6fc6544fb6aeb552a2844675f, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: b80e55bba863045aeace4ca46849cfe1, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
@@ -2446,7 +2445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1682782055}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cf8a98feba0d47e2842a9524f13ca68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Video: []
@@ -3009,13 +3008,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040972934}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 658f86e30997542289ed2f2916a8e837, type: 3}
+  m_Script: {fileID: 11500000, guid: a7e2c8b8618ef410482498028f042f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Audio:
-  - {fileID: 0}
+  Audio: []
 --- !u!1001 &2122867157
 PrefabInstance:
   m_ObjectHideFlags: 0
