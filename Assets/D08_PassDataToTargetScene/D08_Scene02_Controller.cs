@@ -11,8 +11,8 @@ public class D08_Scene02_Controller : MonoBehaviour
 
     void Start()
     {
-        UserInput = PlayerPrefs.GetString("Input");
-        if (string.IsNullOrEmpty(UserInput))
+        UserInput = PlayerPrefs.GetString("Input"); // 넣을 땐 SetString, 가져올 땐 GetString
+        if (string.IsNullOrEmpty(UserInput)) 
         {
             Message.text = "PlayerPrefs에 저장한 데이터가 없습니다.";
         }
