@@ -796,7 +796,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658f86e30997542289ed2f2916a8e837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Audio: []
+  radioAudio: {fileID: 340074086}
+  ambientAudio: {fileID: 2040972935}
 --- !u!1 &431076218
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Videos: []
+  tvVideo: {fileID: 0}
+  boardVideo: {fileID: 0}
 --- !u!1001 &534630615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2474,7 +2476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Videos: []
+  tvVideo: {fileID: 0}
+  boardVideo: {fileID: 0}
 --- !u!1001 &1727862957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3039,8 +3042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658f86e30997542289ed2f2916a8e837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Audio:
-  - {fileID: 0}
+  radioAudio: {fileID: 340074086}
+  ambientAudio: {fileID: 2040972935}
 --- !u!1001 &2122867157
 PrefabInstance:
   m_ObjectHideFlags: 0

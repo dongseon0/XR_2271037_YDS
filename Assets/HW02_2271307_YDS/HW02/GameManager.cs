@@ -2,25 +2,38 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    private static GameManager _instance;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                // 씬에 GameManager가 없으면 자동 생성
+                GameObject obj = new GameObject("GameManager");
+                _instance = obj.AddComponent<GameManager>();
+                DontDestroyOnLoad(obj);
+            }
+            return _instance;
+        }
+    }
 
     public bool isRadioOn = false;
     public bool isTVOn = false;
-
     public bool isBoardOn = false;
-
     public bool isStreetLampOn = false;
 
     private void Awake()
     {
-        if (Instance == null)
+        if (_instance == null)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // 씬이 변경돼도 유지
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        else
+        else if (_instance != this)
         {
-            Destroy(gameObject); // 씬을 이동할 때 GameManager가 중복 생성되지 않도록 방지
+            Destroy(gameObject); // 중복 방지
         }
     }
 

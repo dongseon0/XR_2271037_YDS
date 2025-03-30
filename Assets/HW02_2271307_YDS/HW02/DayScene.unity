@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 34743745}
   m_Layer: 0
   m_Name: monitor
-  m_TagString: Untagged
+  m_TagString: TV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1023,7 +1023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Videos: []
+  tvVideo: {fileID: 519874751}
+  boardVideo: {fileID: 1682782056}
 --- !u!1001 &534630615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1035,6 +1036,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 61399d2f3ed456342b96a35b5c92fb45, type: 3}
       propertyPath: m_Name
       value: TV_80
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 61399d2f3ed456342b96a35b5c92fb45, type: 3}
+      propertyPath: m_TagString
+      value: TV
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 61399d2f3ed456342b96a35b5c92fb45, type: 3}
       propertyPath: m_LocalScale.x
@@ -2823,7 +2828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f36607e0e72e4ddc89504534fe07928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Videos: []
+  tvVideo: {fileID: 519874751}
+  boardVideo: {fileID: 1682782056}
 --- !u!1001 &1727862957
 PrefabInstance:
   m_ObjectHideFlags: 0

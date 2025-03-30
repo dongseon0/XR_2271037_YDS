@@ -8,17 +8,23 @@ public class HW_AudioController : MonoBehaviour
     public AudioSource ambientAudio; // 일상 소음 오디오 소스
     
     void Start()
+{
+    if (radioAudio != null)
     {
-        // 오디오 루프 및 자동 재생 설정
-        if (radioAudio != null)
-            radioAudio.loop = true;
-        
-        if (ambientAudio != null)
-        {
-            ambientAudio.loop = true;
-            ambientAudio.Play(); // 일상 소음은 기본적으로 실행
-        }
+        radioAudio.loop = true;
+        if (GameManager.Instance.LoadState("Radio"))
+            radioAudio.Play();
+        else
+            radioAudio.Pause();
     }
+
+    if (ambientAudio != null)
+    {
+        ambientAudio.loop = true;
+        ambientAudio.Play(); // 일상 소음은 기본적으로 실행
+    }
+}
+
 
     void Update()
     {
@@ -41,9 +47,14 @@ public class HW_AudioController : MonoBehaviour
     }
 
     void ToggleRadio()
+{
+    if (radioAudio != null)
     {
         ToggleAudio(radioAudio);
+        GameManager.Instance.SaveState("Radio", radioAudio.isPlaying);
     }
+}
+
 
     void FixedUpdate()
     {
@@ -62,4 +73,3 @@ public class HW_AudioController : MonoBehaviour
         }
     }
 }
-
