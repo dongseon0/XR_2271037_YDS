@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public bool isBoardOn = false;
 
+    public bool isStreetLampOn = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -35,6 +37,9 @@ public class GameManager : MonoBehaviour
             case "DisplayBoard":
                 isBoardOn = state;
                 break;
+            case "StreetLamp":
+                isStreetLampOn = state;
+                break;
         }
     }
 
@@ -44,6 +49,7 @@ public class GameManager : MonoBehaviour
         {
             "Radio" => isRadioOn,
             "monitor" => isTVOn,
+            "StreetLamp" => isStreetLampOn,
             "DisplayBoard" => isBoardOn,
             _ => false
         };

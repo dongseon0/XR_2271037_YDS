@@ -534,8 +534,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5789896249604009285, guid: 120d7631bf5b4b94f8271411b1868e06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 167815924}
   m_SourcePrefab: {fileID: 100100000, guid: 120d7631bf5b4b94f8271411b1868e06, type: 3}
+--- !u!1 &167815923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5789896249604009285, guid: 120d7631bf5b4b94f8271411b1868e06, type: 3}
+  m_PrefabInstance: {fileID: 167815922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &167815924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167815923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fc9d1b34ab045b5a04ade01d94daa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StreetLamp: {fileID: 740814261}
 --- !u!1 &300591767
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,8 +791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658f86e30997542289ed2f2916a8e837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Audio:
-  - {fileID: 340074086}
+  radioAudio: {fileID: 340074086}
+  ambientAudio: {fileID: 2040972935}
 --- !u!1 &431076218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,6 +1306,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678139772}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &740814261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 447340888338295645, guid: 120d7631bf5b4b94f8271411b1868e06, type: 3}
+  m_PrefabInstance: {fileID: 167815922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &750023284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,6 +2836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Radio
       objectReference: {fileID: 0}
+    - target: {fileID: 3493048315491332693, guid: a5692252a65d2784fad5bd6673ab750f, type: 3}
+      propertyPath: m_TagString
+      value: Radio
+      objectReference: {fileID: 0}
     - target: {fileID: 4265502871271991535, guid: a5692252a65d2784fad5bd6673ab750f, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -3362,7 +3392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658f86e30997542289ed2f2916a8e837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Audio: []
+  radioAudio: {fileID: 0}
+  ambientAudio: {fileID: 0}
 --- !u!1 &2049431654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3704,6 +3735,10 @@ PrefabInstance:
     - target: {fileID: 1908748978636781213, guid: 2a527ecfb00c9452fa78bf14843a045c, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012618587248844815, guid: 2a527ecfb00c9452fa78bf14843a045c, type: 3}
+      propertyPath: isStreetLampOn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9210001661534690400, guid: 2a527ecfb00c9452fa78bf14843a045c, type: 3}
       propertyPath: m_LocalPosition.x

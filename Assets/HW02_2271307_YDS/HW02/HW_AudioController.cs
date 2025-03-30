@@ -4,33 +4,62 @@ using UnityEngine;
 
 public class HW_AudioController : MonoBehaviour
 {
-    public AudioSource[] Audio; // 두 개 이상의 AudioSource를 저장할 배열
-
+    public AudioSource radioAudio; // 라디오 오디오 소스
+    public AudioSource ambientAudio; // 일상 소음 오디오 소스
+    
     void Start()
-    {   
-            foreach (var audio in Audio)
-            {
-                audio.loop = true;  // 각 오디오에 반복 설정
-                audio.Play();       // 각 오디오 재생
-            }
+    {
+        // 오디오 루프 및 자동 재생 설정
+        if (radioAudio != null)
+            radioAudio.loop = true;
         
+        if (ambientAudio != null)
+        {
+            ambientAudio.loop = true;
+            ambientAudio.Play(); // 일상 소음은 기본적으로 실행
+        }
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            foreach (var audio in Audio)
+            ToggleAudio(radioAudio);
+            ToggleAudio(ambientAudio);
+        }
+    }
+
+    void ToggleAudio(AudioSource audio)
+    {
+        if (audio != null)
+        {
+            if (audio.isPlaying)
+                audio.Pause();
+            else
+                audio.Play();
+        }
+    }
+
+    void ToggleRadio()
+    {
+        ToggleAudio(radioAudio);
+    }
+
+    void FixedUpdate()
+    {
+        if (Input.GetMouseButtonDown(0)) // 마우스 왼쪽 버튼 클릭 감지
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            
+            if (Physics.Raycast(ray, out hit))
             {
-                if (audio.isPlaying)
+                if (hit.collider.CompareTag("Radio")) // "Radio" 태그를 가진 오브젝트 감지
                 {
-                    audio.Pause(); // 오디오가 재생 중이면 일시 정지
-                }
-                else
-                {
-                    audio.Play(); // 오디오가 정지 상태이면 재생
+                    ToggleRadio();
                 }
             }
         }
     }
 }
+
