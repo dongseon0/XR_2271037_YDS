@@ -6,6 +6,7 @@ public class Door1_Controller : MonoBehaviour
 {
     public Animator animator;
     public bool isPlayerInside = false;
+    public bool isOpen = false;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -20,11 +21,21 @@ public class Door1_Controller : MonoBehaviour
         if (dot < 0) //내적 계산으로 방향 확인
         {
             animator.SetTrigger("OpenForward");
+            
+            
         }
         else
         {
             animator.SetTrigger("OpenBackward");
         }
+
+        isOpen = true;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+            animator.SetTrigger("Keep");
     }
 
     public void OnTriggerExit(Collider other) {
@@ -32,5 +43,7 @@ public class Door1_Controller : MonoBehaviour
 
         isPlayerInside = false;
         animator.SetTrigger("Close");
+        isOpen = false;
     }
+
 }
