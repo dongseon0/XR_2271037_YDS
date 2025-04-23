@@ -8,7 +8,6 @@ public class D13_Item_Controller : MonoBehaviour
     void OnMouseDown()
     {
         print($"{gameObject}clicked");
-        Pick_Controller.GetComponent<D06_Pick_Controller>().Increase_PickCount();
     }
 
 }
