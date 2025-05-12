@@ -1,11 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro; // TextMeshPro용 네임스페이스 추가
 
 public class GameUIManager : MonoBehaviour
 {
-    public Text pickText;
-    public Text putText;
+    public TextMeshProUGUI pickText;
+    public TextMeshProUGUI putText;
     public Button goToScene02Button;
 
     void Start()
@@ -27,3 +28,4 @@ public class GameUIManager : MonoBehaviour
         UpdateUI(); // 실시간 갱신
     }
 }
+

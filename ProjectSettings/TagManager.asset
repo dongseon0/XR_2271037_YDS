@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Sphere
-  - Radio
-  - TV
-  - Ride
-  - Vehicle
+  tags: []
   layers:
   - Default
   - TransparentFX
